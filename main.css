@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #5f27cd;
+    padding: 16px 0;
+    color: #FFF;
+    display: flex;
+    border-bottom: 16px solid #341f97;
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+form,
+ul{
+    background-color: #c8d6e5;
+    padding: 16px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 8px;
+}
+
+input,
+button {
+    padding: 8px;
+}
+
+button {
+    background-color: #009432;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration: line-through;
+}
