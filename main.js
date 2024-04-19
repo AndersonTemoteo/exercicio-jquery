@@ -5,15 +5,19 @@ $(document).ready(function(){
         if (novaTarefa === ''){
             alert('Insira uma tarefa!');
         } else {
-            const novoItem = $(`<li style="display: none">${novaTarefa}</li>`);
+            const novoItem = $(`<li class="tarefa" style="display: none">${novaTarefa}</li>`);
             $(novoItem).appendTo('ul');
             $(novoItem).fadeIn(1000);
         }
         $('#tarefa').val('');
     });
+
+    $(document).on('click', '.tarefa', function(){
+        $(this).toggleClass('strike');
+    });
 });
 
-const itemChecado = document.querySelector('ul');
+/*const itemChecado = document.querySelector('ul');
 
 itemChecado.addEventListener('click', function(e) {
     if(e.target.classList.contains('strike')){
@@ -21,5 +25,5 @@ itemChecado.addEventListener('click', function(e) {
     } else {
         e.target.classList.add('strike');
     }
-});
+});*/
 
